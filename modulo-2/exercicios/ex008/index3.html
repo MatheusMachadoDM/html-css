@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: darkgray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header{
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        nav{
+            background-color: rgb(80, 80, 80);
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.479); /*tamanho horizontal, tamanho vertical, desfoque, espalhamento e cor e inset antes de tudo para colocar sombra dentro da caixa*/
+        }
+        nav > p{
+            display: inline;
+            color: white;
+            
+        }
+        nav > p::before{
+            content: '| ';
+        }
+        nav > p::after{
+            content: ' |';
+        }
+        nav > p.margem{
+            margin-left: 20px;
+        }
+       
+        nav > p:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        section{
+            padding: 5px 20px;
+            margin-top: 10px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+            padding: 15px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Projeto MindSpace</h1>
+        <nav>
+            <p>Boas-vindas</p>
+            <p class="margem">Regras</p>
+            <p class="margem">Sugestões</p>
+        </nav>
+    </header>
+    <main>
+        <h1>Interaja com a comunidade</h1>
+        <section id="chat">
+            <h2>Aqui você pode interagir com outros membros da comunidade</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui neque dolorum modi! Esse voluptatum eos molestias cum aliquid exercitationem tenetur. Blanditiis vel consectetur id enim omnis corrupti officia earum praesentium?</p>
+        </section>
+        <section id="confissoes">
+            <h2>Aqui você pode fazer confissões anônimas</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum facere animi excepturi ipsam perferendis provident nam eius, aliquid similique quod nisi voluptates odit at commodi dolorum neque aliquam unde? Deleniti?</p>
+        </section>
+    </main> 
+    <footer>
+        <p>Desenvolvido por Matheus Machado</p>
+    </footer>   
+</body>
+</html>

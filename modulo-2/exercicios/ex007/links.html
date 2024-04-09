@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            #   = ID
+            .   = Class
+            :   = Pseudo-class
+            ::  = Pseudo-element
+            >   = child
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            
+        }
+        /*a:visited{
+            color: darkblue;
+        }*/
+        a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        a:active{
+            color: darkred;
+        }
+        .especial:hover{
+            background-color: lightblue;
+        }
+        a::before{
+            content: '⇒ ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkblue;
+        }
+        a::after{
+            content: ' ⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkblue;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://erikasarti.com/html/dingbats-simbolos-desenhos/" target="_blank" type="external" class="especial">Tabela de símbolos</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank" type="external">Canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/apoie/" target="_blank" type="external">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

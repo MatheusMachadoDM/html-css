@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body{
+    background-color:#EFEFF0;
+}
+h1{
+    color: #70587C;
+    background-color:#D5CAD6;
+}
+h2{
+    color:#70587C;
+    background-color: #D5CAD6;
+}
+p{
+    text-align: justify;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <p>Diminua o tamanho da tela</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/ImagemP.jpg" type="image/jpeg"><!--Se a tela tiver a largura maxima de 750 pixels mostre esta imagem-->
+        <source media="(max-width: 1050px)" srcset="Imagens/ImagemM.jpg" type="image/jpeg">
+        <img src="Imagens/ImagemG.jpg" alt="Imagem dinamica">
+    </picture>
+
+</body>
+</html>

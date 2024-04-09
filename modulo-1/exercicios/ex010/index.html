@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de midia</title>
+</head>
+<body>
+    <h1>Como colocar áudio e video</h1>
+
+    <h2>Áudio</h2>
+
+    <p>Aqui tem dois jeitos de colocar áudio usando HTML</p>
+
+    <h3>Forma simples</h3>
+
+    <audio src="midias/happy-mistake.mp3" controls ></audio>
+ 
+    <h3>Forma em que é possível colocar mais parametros, como loop, preload e etc</h3>
+
+    <audio preload="metadata" controls loop>
+        <source src="midias/happy-mistake.mp3" type="audio/mpeg">
+    </audio>
+
+    <h2>Video local</h2>
+
+    <h3>Forma simples</h3>
+
+    <video src="midias/pexels-gylfi-gylfason-15937301 (1080p).mp4" width="400" controls></video>
+    <h3>Forma em que é possível colocar thumb, adicionar outros vídeos caso o primeiro não rode e etc</h3>
+
+    <video width="400" poster="midias/thumb-cachoeira.jpg" controls>
+        <source src="midias/pexels-gylfi-gylfason-15937301 (1080p).mp4" type="video/mp4">
+    </video>
+
+    <h2>Video do youtube</h2>
+
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=ID4jrZPuC3155pz3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h2>Video do vimeo</h2>
+    <hr>
+    <iframe src="https://player.vimeo.com/video/353036633?h=a7b727b73e&color=ffffff&title=0&byline=0&portrait=0&badge=0" width="400" height="225" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

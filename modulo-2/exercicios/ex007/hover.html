@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            width: fit-content;
+        }
+        div > img /*p*/{
+            display: none;
+        }
+        div:hover > img/*p*/{
+            display: block;
+            width: 900px;
+            padding: 20px;
+            /*
+            background-color: red;
+            color: white;
+            width: fit-content;
+            */
+        }
+        div:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Passe o mouse no texto</h1>
+    <div>
+        Passe o mouse aqui
+        <img src="https://i.ytimg.com/vi/wLoRiTk-awo/maxresdefault.jpg" alt="Its me dio">
+        <!--<p>Texto Escondido</p>-->
+    </div>
+</body>
+</html>

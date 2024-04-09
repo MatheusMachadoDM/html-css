@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 20px;
+        }
+        div{
+            width: fit-content;
+        }
+        div:hover > h2{
+            color: blue;
+            text-decoration: underline;
+        }
+        div > ul{
+            display: none;
+        }
+        div:hover > ul{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de caixa</h1>
+    <div>
+        <h2 class="espaco">Box-Level</h2><!--São caixas que ocupam uma linha inteira-->
+        <ul>
+            <li>div</li>
+            <li>h1-h6</li>
+            <li>p</li>
+            <li>main</li>
+            <li>header</li>
+            <li>nav</li>
+            <li>article</li>
+            <li>aside</li>
+            <li>footer</li>
+            <li>form</li>
+            <li>video</li>
+        </ul>
+    </div>
+    <div>
+        <h2>Inline-Level</h2> <!--São caixas que não ocupam uma linha inteira, apenas o conteúdo desejado-->
+        <ul>
+            <li>span</li>
+            <li>a</li>
+            <li>code</li>
+            <li>small</li>
+            <li>strong</li>
+            <li>em</li>
+            <li>sup - sub</li>
+            <li>label</li>
+            <li>button</li>
+            <li>input</li>
+            <li>select</li>
+        </ul>
+    </div>
+
+</body>
+</html>

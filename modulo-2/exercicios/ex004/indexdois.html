@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando fontes internas</title>
+    <style>
+        @font-face {
+            font-family: OldLondon;
+            src: url(old_london/OldLondon.ttf) format(truetype), url(old_london/Olondon_.otf) format(opentype);
+            font: normal normal 16px;
+            /*
+            Formatos:
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+        }
+        body{
+            font-size: 2em;
+        }
+        h1{
+            font-family: OldLondon;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forgotten Souls</h1>
+    <hr>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, molestias! Labore, assumenda officia harum deleniti nam ipsam exercitationem dolore itaque optio aspernatur dolorem eligendi debitis fuga, temporibus quod et repellendus.</p>
+</body>
+</html>

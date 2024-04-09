@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Level</title>
+    <style>
+        h1{
+            background-color: lightblue;
+            width: 300px;
+            height: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: lightgreen;
+
+            border: 10px solid lightgreen; /*Shorthand, na sequencia largura, estilo e cor*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            padding: 10px 10px 10px 10px; /*ShortHand, no sentido horário: topo, direita, baixo e esquerda*/ 
+            padding: 10px;/*Se todos os lados forem iguais podemos simplificar colando o número apenas uma vez*/
+
+            padding: 10px 10px; /*Quando colocamos dois valores, vai alterar a vertical e a horizontal*/
+
+            margin-top: 30px;
+            margin-right: 10px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            /*margin: auto;*/ /*Centralizar caixa horizontalmente*/
+
+            margin: 30px 10px 30px 30px;/*Shorthand, sentido horário*/
+            /*margin: 10px auto 10px auto;*/ /*Desta forma conseguimos centralizar horizontalmente a caixa e ainda alterar seu tamanho verticalmente*/
+
+            outline-width: 10px;
+            outline-style: dashed;
+            outline-color: red;
+
+            outline: 10px dashed red; /*Shorthand: largura, estilo e cor*/
+        }
+        p{
+            border-width: 10px;
+            border-style: dotted;
+            border-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de box-level</h1>
+    <p>Páragrafos são box-level mas <a href="#">links</a> são inline-level</p>
+    
+</body>
+</html>

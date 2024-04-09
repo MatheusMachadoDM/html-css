@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Diminua o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="Imagens/ImagemP.jpg" type="image/JPG">
+        <source media="(max-width: 1050px)" srcset="Imagens/ImagemM.jpg" type="image/jpg">
+        <img src="Imagens/ImagemG.jpg" alt="Imagem grande">
+    </picture>
+</body>
+</html>
