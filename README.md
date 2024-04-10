@@ -13,5 +13,6 @@ Aqui tem alguns links para ver as páginas de estudo:
 <a href="https://matheusmachadodm.github.io/html-css/modulo-1/exercicios/ex009/" target="_blank">Exercicio 009</a>
 <a href="https://matheusmachadodm.github.io/html-css/modulo-1/exercicios/ex010/" target="_blank">Exercicio 010</a>
 <a href="https://matheusmachadodm.github.io/html-css/modulo-1/exercicios/ex011/" target="_blank">Exercicio 011</a>
-<a href="https://matheusmachadodm.github.io/html-css/modulo-1/exercicios/ex012/" target="_blank">Exercicio 012</a>
+<a href="https://matheusmachadodm.github.io/html-css/modulo-1/exercicios/ex012/" target="_blank">Exercicio 012</a> <br>
 <a href="https://matheusmachadodm.github.io/html-css/modulo-1/exercicios/ex013/" target="_blank">Exercicio 013</a>
+
