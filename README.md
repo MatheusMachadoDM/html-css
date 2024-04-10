@@ -23,6 +23,7 @@ Exercícios do módulo 2:
 <a href="https://matheusmachadodm.github.io/html-css/modulo-2/exercicios/ex003/" target="_blank">Exercicio 003</a>
 <a href="https://matheusmachadodm.github.io/html-css/modulo-2/exercicios/ex004/" target="_blank">Exercicio 004</a>
 <a href="https://matheusmachadodm.github.io/html-css/modulo-2/exercicios/ex005/" target="_blank">Exercicio 005</a>
+<a href="https://matheusmachadodm.github.io/html-css/modulo-2/exercicios/ex006/" target="_blank">Exercicio 006</a>
 <a href="https://matheusmachadodm.github.io/html-css/modulo-2/exercicios/ex007/" target="_blank">Exercicio 007</a>
 <a href="https://matheusmachadodm.github.io/html-css/modulo-2/exercicios/ex008/" target="_blank">Exercicio 008</a>
 
