@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #fora{
+            background-image: url(ex001/imagens/target001.png);
+            background-size: 100% 100%;
+            background-position: center center;
+            background-color: purple;
+
+            position: relative; /*padrão sempre é relative*/
+            height: 500px;
+            padding: 10px;
+        }
+        #dentro{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+            background-image: url(ex001/imagens/target001.png);
+            background-size: 100% 100%;
+            background-position: center center;
+            background-color: rgba(255, 255, 0, 0.377);
+            height: 200px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <section id="fora">
+        <article id="dentro">
+
+        </article>
+    </section>
+</body>
+</html>
