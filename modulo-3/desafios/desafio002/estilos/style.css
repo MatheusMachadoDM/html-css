@@ -59,15 +59,19 @@ section{
 section.normal{
     background-color: white;
     color: black;
+
 }
 section.imagem{
     background-color: rgb(36, 35, 35);
     color: white;
+    box-shadow: inset 0px 0px 20px black;
+    
 }
 pre{
     white-space: pre-line;
 
-    padding: 1vh;
+    padding-bottom: 1em;
+
     font-family: var(--fonte3);
     font-size: 3vw;
 }
@@ -78,7 +82,20 @@ pre{
   }
 section.imagem > pre{
     background-color: rgba(0, 0, 0, 0.37);
+
     width: fit-content;
+
+    padding: 1vh;
+
+    text-shadow: 1px 1px 1px black;
+}
+#fundo1{
+    background: url(../imagens/background001.jpg) right center no-repeat fixed;
+    background-size: cover;
+}
+#fundo2{
+    background: url(../imagens/background002.jpg) right center no-repeat fixed;
+    background-size: cover;
 }
 footer{
     background-color: black;
