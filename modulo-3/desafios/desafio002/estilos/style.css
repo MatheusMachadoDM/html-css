@@ -90,11 +90,11 @@ section.imagem > pre{
     text-shadow: 1px 1px 1px black;
 }
 #fundo1{
-    background: url(../imagens/background001.jpg) right center no-repeat fixed;
+    background: url(../imagens/background001.jpg) center center no-repeat fixed;
     background-size: cover;
 }
 #fundo2{
-    background: url(../imagens/background002.jpg) right center no-repeat fixed;
+    background: url(../imagens/background002.jpg) center center no-repeat fixed;
     background-size: cover;
 }
 footer{
