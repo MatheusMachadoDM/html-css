@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira tabela</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            padding: 5px;
+
+        }
+        .topo-esquerda{
+            text-align: left;
+            vertical-align: top;
+        }
+        .topo{
+            text-align: center;
+            vertical-align: top;
+        }
+        .topo-direita{
+            text-align: right;
+            vertical-align: top;
+        }
+        .meio-esquerda{
+            text-align: left;
+            vertical-align: center;
+        }
+        .meio{
+            text-align: center;
+            vertical-align: center;
+        }
+        .meio-direita{
+            text-align: right;
+            vertical-align: center;
+        }
+        .baixo-esquerda{
+            text-align: left;
+            vertical-align: bottom;
+        }
+        .baixo{
+            text-align: center;
+            vertical-align: bottom;
+        }
+        .baixo-direita{
+            text-align: right;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhamento de conteúdo dentro da tabela</h1>
+    <table>
+        <tr>
+            <td class="topo-esquerda">A1</td>
+            <td class="topo">B1</td>
+            <td class="topo-direita">C1</td>
+        </tr>
+        <tr class="linha">
+            <td class="meio-esquerda">A2</td>
+            <td class="meio">B2</td>
+            <td class="meio-direita">C2</td>
+        </tr>
+        <tr>
+            <td class="baixo-esquerda">A3</td>
+            <td class="baixo">B3</td>
+            <td class="baixo-direita">C3</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+            width: 40vw;
+        }
+        caption{
+            background-color: lightgray;
+
+            font-size: 1.5em;
+        }
+        tr, th, td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        .num{
+            text-align: center;
+        }
+        tbody > tr:nth-child(even){
+            background-color: rgb(228, 227, 227);
+        }
+        tfoot{
+            background-color: rgb(168, 168, 168);
+            color: black;
+        }
+        h1, p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Anatomia de tabelas grande</h1>
+    <!--
+        TABLE
+            CAPTION
+                THEAD
+                    TR, TH e TD
+                TBODY
+                    TR, TH e TD
+                TFOOT
+                    TR, TH e TD
+
+        SCOPE = col para coluna e row para linha.(Importante para SEO)
+    -->
+    <table>
+        <caption>Composição por faixa etária</caption>
+        <thead>
+            <tr>
+                <th scope="col">País</th>
+                <th scope="col">Crianças</th>
+                <th scope="col">Jovens</th>
+                <th scope="col">Adultos</th>
+                <th scope="col">Idosos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brasil</td>
+                <td class="num">20,0%</td>
+                <td class="num">15,7%</td>
+                <td class="num">54,1%</td>
+                <td class="num">10,2%</td>
+            </tr>
+            <tr>
+                <td>Reino Unido</td>
+                <td class="num">17,1%</td>
+                <td class="num">11,8%</td>
+                <td class="num">52,3%</td>
+                <td class="num">18,8%</td>
+            </tr>
+            <tr>
+                <td>México</td>
+                <td class="num">24,3%</td>
+                <td class="num">17,0%</td>
+                <td class="num">50,0%</td>
+                <td class="num">7,9%</td>
+            </tr>
+            <tr>
+                <td>Nigéria</td>
+                <td class="num">41,0%</td>
+                <td class="num">20,6%</td>
+                <td class="num">35,3%</td>
+                <td class="num">3,1%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">País com maior quantidade:</th>
+                <td>Nigéria</td>
+                <td>Nigéria</td>
+                <td>Brasil</td>
+                <td>Reino Unido</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p><strong>Fonte:</strong> US Census Bureau 2022.</p>
+</body>
+</html>
