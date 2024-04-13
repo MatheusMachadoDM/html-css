@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{
+    --cor1: #F3E5D8;
+    --cor2: #7C4C3E;
+    --cor3: #7b284f;
+    --cor4: #FFF7FC;
+
+    --fonte1: 'Young Serif', serif;
+    --fonte2: 'Outfit', sans-serif;
+}
+img{
+    width: 100%;
+
+    border-radius: 15px;
+}
+hr{
+    border-color: rgba(228, 228, 228, 0.274);
+}
+strong{
+    color: rgb(97, 97, 97);
+}
+ul , ol{
+   line-height: 2em;
+}
+li::marker{
+    color: var(--cor2);
+}
+body{
+    background-color: var(--cor1);
+
+    color: gray;
+    font-family: var(--fonte2);
+    text-align: justify;
+}
+#tempo-preparacao{
+    background-color: var(--cor4);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px
+}
+#tempo-preparacao li::marker {
+    color: var(--cor3);
+  }
+main{
+    background-color: white;
+
+    max-width: 800px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 10px;
+}
+main > h1, h2{
+    font-family: var(--fonte1);
+    font-weight: normal;
+}
+main h1{
+    color: black;
+    font-size: 3em;
+}
+main > h2{
+    color: var(--cor2);
+}
+main h3{
+    color: var(--cor3);
+}
