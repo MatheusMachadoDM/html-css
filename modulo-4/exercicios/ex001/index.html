@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando iframes</title>
+    <style>
+        #iframeG{
+            width: 500px; /*Também podemos mudar as dimensões do iframe usando CSS, que tem prioridade*/
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de iframes</h1>
+    <!--Tamanho padrão de 300x150-->
+    <p>Acesso o site do curso em vídeo aqui 
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0" height="500px" scrolling=""></iframe> <!--Scrolling faz com que voce possa controlar a barra de rolagem. Opções: auto, yes e no -->
+            <a href="https://www.cursoemvideo.com/" target="_blank">Curso em vídeo</a><!--Esta mensagem aparece caso o navegador não seja compativel com iframes-->
+        </iframe></p>
+
+    <p>O site da Google tem uma proteção que impede o uso de iframes 
+        <iframe src="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwiQt8Kr0MSFAxVOI7kGHRYlBq0QPAgJ" frameborder="0" id="iframeG">
+
+        </iframe></p>
+</body>
+</html>
