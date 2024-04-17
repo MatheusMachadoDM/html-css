@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.js" method="get">
+        <!--
+            Radio: Pode marcar apenas uma opção, colocar o mesmo name nas opções para que quando selecionar um desmarcar o outro
+            
+            Value: Para atribuir valor a opção marcada
+
+            Checkbox: Pode marcar mais de uma opção
+        -->
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmasc" value="M"> <label for="isxmasc">Masculino</label>
+            <br>
+            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favortitos</legend>
+            <input type="checkbox" name="futebol" id="ifutebol"> <label for="ifutebol">Futebol</label>
+        <br>
+            <input type="checkbox" name="basquete" id="ibasquete"> <label for="ifutebol">Basquete</label>
+        <br>
+            <input type="checkbox" name="volei" id="ivolei" checked> <label for="ifutebol">Volei</label>
+        <br> 
+            <input type="checkbox" name="tenis" id="itenis"> <label for="ifutebol">Tenis</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

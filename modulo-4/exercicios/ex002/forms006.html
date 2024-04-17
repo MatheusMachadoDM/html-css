@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--
+        Quando se tratar de arquivos é necessário usar o metódo POST pois passa de 3000 bytes
+
+        Value: Define o valor inicial do input
+    -->
+    <form action="cadastro.js" method="post">
+        <fieldset>
+            <legend>Tipos de input</legend>
+            <p>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor" value="#ffffff">
+                <br>
+                <label for="inivel">Nivel de satisfação: </label>
+                <input type="range" name="nive" id="inivel" min="1" max="5" value="2">
+                <br>
+                <label for="iarquivo">Enviar arquivo: </label>
+                <input type="file" name="arquivo" id="iarquivo">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
