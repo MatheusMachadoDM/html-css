@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="cadastro.js" method="post">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu'" id="iusu" required size="12" placeholder="Nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha " id="isenha" required minlength="8" maxlength="20" placeholder="Senha" autocomplete="current-password">
+        </p>
+        <!--
+            Required: Campo obrigatório
+
+            Size: Tamanho da caixa em html, quantos caracteres vão caber
+
+            Placeholder: Texto dentro da caixa
+
+            Autocomplete: Indicar ao navegador oque cada campo significa para que possa puxar as informações prévias do usuário
+
+            Min e maxlenght: Tamanho maximo de caracter permitido no campo
+
+            Name: Útil para o html e PHP
+            Id: Útil para JS
+        -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
