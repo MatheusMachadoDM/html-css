@@ -13,10 +13,20 @@
     --fonte1: 'Young Serif', serif;
     --fonte2: 'Outfit', sans-serif;
 }
-img{
-    width: 100%;
 
-    border-radius: 15px;
+#imagem-centralizada{
+    padding-bottom: 50%;
+    margin: -35px;
+    margin-bottom: 8px;
+    position: relative;
+}
+#imagem-centralizada img{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    border-radius: 10px 10px 0px 0px;
 }
 hr{
     border-color: rgba(228, 228, 228, 0.274);
@@ -47,12 +57,14 @@ body{
     color: var(--cor3);
   }
 main{
+
     background-color: white;
 
     max-width: 800px;
     margin: auto;
     padding: 35px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
 }
 main > h1, h2{
     font-family: var(--fonte1);
@@ -67,4 +79,25 @@ main > h2{
 }
 main h3{
     color: var(--cor3);
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+
+}
+th, td{
+    border-bottom: 2px solid rgba(224, 224, 224, 0.788);
+    border-radius: 10px;
+
+}
+th{
+    padding-right: 20px;
+    text-align: left;
+}
+th::after{
+    content: ':';
+}
+td{
+    padding-left: 20px;
+    text-align: right;
 }
