@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoint em abril de 2024
+Celular: 360 x 640
+Tablet: 768 x 1024
+Laptop: 1366 x 768
+TVs ou monitores 4k: 1920 x 1080
+*/
+
+/*Impressão*/
+@media print{
+    *{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    main{
+        border: 2px solid black;
+    }
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+    img#celular{
+        display: none;
+    }
+    img#impressora{
+        display: block;
+    }
+
+    h2{
+        display: block;
+        text-align: center;
+        color: transparent;
+    }
+    h2::after{
+        content: 'Versão de impressora';
+        color: black;
+        text-align: center;
+        text-shadow: none;
+    }
+}
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#celular{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+    }
+
+    h2{
+        display: block;
+        text-align: center;
+        color: transparent;
+    }
+    h2::after{
+        content: 'Versão de tablet';
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+}
+/*Telas full HD*/
+@media screen and (min-width: 1024px) and (max-width: 1920px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#celular{
+        display: none;
+    }
+    img#pc{
+        display: block;
+    }
+
+    h2{
+        display: block;
+        text-align: center;
+        color: transparent;
+    }
+    h2::after{
+        content: 'Versão de computador';
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+}
+/*Telas 4K*/
+@media screen and (min-width: 1921px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#celular{
+        display: none;
+    }
+    img#tv{
+        display: block;
+    }
+
+    h2{
+        display: block;
+        text-align: center;
+        color: transparent;
+    }
+    h2::after{
+        content: 'Versão de TV';
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+}
