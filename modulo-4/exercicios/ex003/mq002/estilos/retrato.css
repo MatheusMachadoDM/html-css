@@ -1,3 +1,6 @@
 @charset "UTF-8";
 
 /*Css para o dispositivo em pé (Portrait)*/
+body{
+    background-image: url(../imagens/cev-portrait.jpg);
+}
