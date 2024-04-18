@@ -3,7 +3,7 @@
 @media screen and (orientation: landscape){
     #login{
         width: 80vw;
-        height: 80vh;
+        height: 70vh;
     }
     #imagem{
         float: left;
@@ -16,6 +16,7 @@
         float: right;
         width: 70%;
     }
+
 }
 /*Versão para tablet*/
 @media screen and (min-width: 768px) and (max-width: 1024px){
@@ -24,18 +25,27 @@
     }
     #login{
         width: 80vw;
+        height: 320px;
     }
     #imagem{
         float: left;
         width: 30%;
         height: 100%;
 
-        background-position: left bottom;
+        background-position: center bottom;
     }
     #formulario{
         float: right;
         width: 70%;
     }
+    #formulario p{
+        font-size: 1em;
+    }
+    #campo input{
+        width: calc(100% - 46px);
+        transform: translateY(-11px);
+    }
+
 }
 /*Versão para telas maiores*/
 @media screen and (min-width: 1025px){
@@ -47,14 +57,21 @@
         height: 400px;
     }
     #imagem{
-        float: left;
-        width: 35%;
+        float: right;
+        width: 40%;
         height: 100%;
 
         background-position: center bottom;
     }
     #formulario{
-        float: right;
-        width: 65%;
+        float: left;
+        width: 60%;
+    }
+    #formulario p{
+        font-size: 1.2em;
+    }
+    #campo input{
+        width: calc(100% - 47px);
+        transform: translateY(-10.5px);
     }
 }
