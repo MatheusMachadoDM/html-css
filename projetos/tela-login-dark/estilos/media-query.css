@@ -1,0 +1,8 @@
+@media screen and (max-width: 950px){
+    #left-login{
+        display: none;
+    }
+    #right-login{
+        width: 100vw;
+    }
+}
