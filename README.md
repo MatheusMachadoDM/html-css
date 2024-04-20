@@ -1,6 +1,6 @@
 # html-css
 Esta é uma pasta de estudos de HTML5 e CSS3 usando o curso do Gustavo Guanabara.
-APOS TERMINAR OS MODULOS, ESTUDAR FLEXBOX, GRID LAYOUT E MEDIA QUEERY
+APOS TERMINAR OS MODULOS, ESTUDAR FLEXBOX e GRID LAYOUT
 
 Gerenciador de pacotes: NPM/YARN 
 
