@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.container{
+    background-color: #ccc;
+    height: 500px;
+
+    display: flex; /*Serve pra trasformar o elemento em um container flexível, então podemos mexer seus elementos filhos de maneira flexível*/
+    
+    flex-direction: row; /*Flex direction define se os elemetos serão exibidos em linha ou em coluna. 
+    Parametros:
+
+        row (Padrão)
+        column
+        reverse-row
+        reverse-column
+    */
+    flex-wrap: nowrap; /* Flex wrap define se os elementos terão quebra de linha
+    Parametros:
+        nowrap(Padrão)
+        wrap
+        wrap-reverse: qubra de linhas de baixo para cima
+    */
+    flex-flow: row nowrap;/*Shorthand para o flex direction e o flex-wrap*/
+    justify-content: flex-start;/*Alinha os elementos HORIZONTALMENTE mas não muda sua direção, apenas alinhamento
+    Parametros:
+
+        flex-start(Padrão)     = Alinha os elementos no ínicio da linha
+        flex-end                = Alinha os elementos no final da linha
+        space-between           = Cria um epaço entre os elementos
+        space-around            = Cria um espaço em volta dos elementos
+        space-evenly            = Distribiu espaço igual entre os
+    */
+    align-items: stretch; /*Serve para alinhar os elementos VERTICALMENTE mas não muda direção
+    Parametros:
+
+        stretch(Padrão):    = Estica os elementos até o final do container
+        flex-start          = Alinha os elementos no ínicio da coluna
+        flex-end            = Alinha os elementos no fim da coluna
+        center              = Alinha os elementos no meio da coluna
+        baseline            = Alinha os elementos mas respeitando o tamanho do seu conteúdo
+    */
+    align-content: stretch; /*Alinha elementos verticalmente mesmo que tenha uma quebra de linha entre eles
+    Parametros:
+        stretch(Padrão):    = Estica os elementos até o final do container
+        flex-start          = Alinha os elementos no ínicio da coluna
+        flex-end            = Alinha os elementos no fim da coluna
+        center              = Alinha os elementos no meio da coluna
+        space-between       = Cria um epaço entre os elementos
+        space-around        = Cria um espaço em volta dos elementos
+
+    */
+}
+.item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    height: 40px;
+    flex-grow: 0;
+    flex-basis: 100px;
+}
+/*Trabalhando com propriedades nos elementos filhos
+
+    order:      = Define a ordem do elemeno selecionado
+    align-self  = Alinha apenas o elemento definido, caso esteja com flex-direction em row, vai alinhar verticalmente, caso esteja em column, vai alinha horizontalmente
+
+    flex-grow   =  Representa a proporção do espaço disponível que o item flexível deve ocupar em relação aos outros itens flexíveis dentro do mesmo contêiner. EX: se um item tem flex-grow: 1 e outro tem flex-grow: 2, o segundo item ocupará o dobro do espaço adicional em comparação ao primeiro, se houver espaço extra disponível.
+
+    flex-shrink =   Faz o contrário do flex-grow, encolhe o elemente em relação ao demais que estão no mesmo container
+
+    flex-basis  = Define o tamanho inicial de um item flexível antes que o espaço extra seja distribuído ou antes que os itens sejam redimensionados para preencher o contêiner flexível.
+
+    flex        = Shorthand para definir respectivamente o flex-grow, shrink e basis
+
+
+
+*/
+.article-01{
+    order: 2;
+}
+.article-02{
+    order: 4; 
+    align-self: stretch;
+    flex-grow: 2;
+}
+.article-03{
+    order: 3;
+    flex-shrink: 2;
+}
+.article-04{
+    order: 1;
+}
