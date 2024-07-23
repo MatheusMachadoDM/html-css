@@ -38,7 +38,6 @@ Este é um repositório de estudos de HTML5 e CSS3 usando como base principal os
 🔗<a href="https://matheusmachadodm.github.io/html-css/modulo-1%20-%20basico%20do%20HTML%20e%20introducao%20ao%20CSS/desafios/desafio009%20-%20paginas%20internas%20com%20video" target="_blank">desafio009 - paginas internas com video</a>
 
 OBS: Após os modulos estudar:
-
 Gerenciador de pacotes: NPM/YARN 
 Estudar melhor dns, https(segurança)
 framework
