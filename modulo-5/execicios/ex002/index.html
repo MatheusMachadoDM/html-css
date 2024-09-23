@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row-reverse;
+            /*
+                Eixos: Todos os elementos que usa o display flex tem dois eixos, o main-axis(eixo principal) e o cross-axis(eixo transversal), cada eixo gera dois pontos, o main-start(ponto inicial) e o main-end(ponto final). A direção dos eixos são alterados dependendo do flex-direction e os itens seguem as direções dos eixos.
+
+                row: Main-axis da esquerda para direita e cross-axis de cima para baixo;
+
+                row-reverse: Main-axis da direita para esquerda e cross-axis de cima para baixo;
+
+                column: Main-axis de cima para baixo e cross-axis da equerda para direita;
+
+                column-reverse: Main-axis de baixo para cima e cross-axis da equerda para direita
+            */
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
