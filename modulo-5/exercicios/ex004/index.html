@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamentos</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row;
+            /*
+            justify-content: Alinha o conteúdo em relação ao main-axis (eixo principal);
+
+            flex-start: O primeiro item fica colado ao main-start e o espaço livre ao lado do main-end;
+
+            flex-end: O último item fica colado ao main-end e caso tenha o espaço livre fica ao lado do main-start;
+
+            center: Alinha os itens juntos no centro no main-axis e o espaço livre fica distribuído entre o main-start e o main-end;
+
+            space-beteen: Cola o primerio item no main-start e o último item no main-end e o espaço livre fica entre os outros itens;
+
+            space-evenly: Antes e depois dos itens coloca um espaço igual;
+
+            OLHAR O SPACE AROUND
+            */
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
