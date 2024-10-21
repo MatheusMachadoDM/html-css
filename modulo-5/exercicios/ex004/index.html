@@ -7,9 +7,13 @@
     <style>
         div.container{
             background-color: lightsalmon;
-
+            height: 300px;
             display: flex;
             flex-direction: row;
+
+            justify-content: flex-start;
+
+            align-items: center;
             /*
             justify-content: Alinha o conteúdo em relação ao main-axis (eixo principal);
 
@@ -19,11 +23,21 @@
 
             center: Alinha os itens juntos no centro no main-axis e o espaço livre fica distribuído entre o main-start e o main-end;
 
-            space-beteen: Cola o primerio item no main-start e o último item no main-end e o espaço livre fica entre os outros itens;
+            space-between: Cola o primerio item no main-start e o último item no main-end e o espaço livre fica entre os outros itens;
 
             space-evenly: Antes e depois dos itens coloca um espaço igual;
 
-            OLHAR O SPACE AROUND
+            space-around: Divide os elementos em partes iguais e centraliza os elesmentos.
+
+            align-items: Alinha o conteúdo em relação ao cross-axis (eixo transversal);
+
+            stretch: (padrão) Estica os elementos caso os cross-axis seja aumentado;
+
+            flex-start: Cola os elementos no cross-start;
+
+            flex-end: Cola os elementos no cross-end;
+
+            center: Deixa um espaço livre igual no ínicio e final do cross-axis;
             */
         }
         div.item{

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamentos de elementos empacotados</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-evenly;
+            height: 400px;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px, solid black;
+            text-align: center;
+            padding: 40px;
+        }
+        /*
+            align-content: Alinha os elementos em direção ao cross-axis MAS apenas quando estão empacotados(wrap);
+
+            stretch: (padrão) Parecido com o space around, ele divide todo os espaço disponivel igualmente e estica os elementos;
+
+            flex-start: Gruda os elementos no cross-start;
+
+            flex-end: Gruda os elementos no cross-end;
+
+            center: Alinha os elementos no centro do cross-axis, deixando um espaço em branco entre o cross-start e o cross-end;
+
+            space-between: coloca os elementos grudados no cross-start e no cross-end e deixa um espaço igual entre eles;
+
+            space-evenly: Divide um espaçi igual entre os elementos;
+
+            space-around: Parecido com stretch, cria um espaço igual para os elementos e os coloca no meio deste espaço;
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
