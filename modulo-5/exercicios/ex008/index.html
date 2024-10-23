@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia dos itens Flexbox</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            height: 400px;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px, solid black;
+            text-align: center;
+            padding: 20px;
+        }
+        #i1{
+            order: 0;
+            align-self: auto;
+        }
+        #i2{
+            order: 0;
+            align-self:  flex-start;
+        }
+        #i3{
+            order: 0;
+            align-self:  flex-end;
+        }
+        #i4{
+            order: 0;
+            align-self: center;
+        }
+        #i5{
+            order: 0;
+            align-self: stretch;
+        }
+        #i6{
+            order: 0;
+        }
+        /*
+           Anatomia de itens
+
+           align-self: Reposiciona o item de acordo com o cross-axis do container;
+
+           auto: (padrão) O item fica de acordo com oque foi definido no container;
+           
+           flex-start: Posiciona o item no cross-start;
+
+           flex-end: Posiciona o item no cross-end;
+
+           center: Centralzia o item;
+
+           stretch: Estica o item do início ao fim do cross-axis;
+
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">F</div>
+        <div class="item" id="i6">G</div>
+    </div>
+</body>
+</html>
