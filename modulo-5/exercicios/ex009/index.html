@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px, solid black;
+            text-align: center;
+            padding: 5px;
+            flex-basis: 100px;
+        }
+        /*
+            Flex-basis: Determina o tamanho que o item terá antes de qualquer flexibilidade ser aplicada(Crescimento ou encolhimento);
+
+            auto: (padrão) O tamanho será calculado de acordo com a largura ou altura do item, dependendo main-axis;
+
+            tamanho-prioritário: Caso o flex-basis seja especificado, ele tem prioridade sobre width e height, ou seja, o tamanho do item será baseado no valor no valor do flex-basis;
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">AAAAAAAA</div>
+        <div class="item">B</div>
+        <div class="item">CCCCCCCCCCC</div>
+        <div class="item">D</div>
+        <div class="item">F</div>
+        <div class="item">GGGGGGGGGGGGGGGGG</div>
+    </div>
+</body>
+</html>
