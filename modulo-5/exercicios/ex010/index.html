@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex shrink e grow</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px, solid black;
+            text-align: center;
+            padding: 5px;
+            flex-basis: 150px;
+        }
+        #A{
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        #B{
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+        #C{
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+        /*
+            flex-shrink: O elemento pode encolher;
+
+            flex-grow: o elemento pode crescer;
+
+            0 = false;
+
+            1 = true;
+
+            2 ou mais = Cresce ou encolhe proporcionalmente X vezes em relação ao menor elemento que nao seja 0;
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="A">A</div>
+        <div class="item" id="B">B</div>
+        <div class="item" id="C">C</div>
+
+    </div>
+</body>
+</html>
