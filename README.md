@@ -4,7 +4,7 @@ Este é um repositório de estudos de HTML5 e CSS3 usando como base principal os
 ## Projetos feitos fora do curso:
 
 🔗<a href="https://matheusmachadodm.github.io/html-css/projetos/tela-login-dark/" target="_blank">Tela login dark</a> <br>
-🔗<a href="https://matheusmachadodm.github.io/html-css/projetos/pagina-hotel/">Página hotel</a><br>
+🔗<a href="https://matheusmachadodm.github.io/faculdade/Desenvolvimento%20Web%20B%C3%A1sico/trabalho%20front%20end/paginas/index.html">Página hotel</a><br>
 🔗<a href="https://matheusmachadodm.github.io/html-css/projetos/pagina-de-receita/" target="_blank">Página receita</a>
 <hr>
 
